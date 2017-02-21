@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model / Layout</title>
+  <style>
+    body {
+      margin: 3rem;
+    }
+    .box {
+      width: 100px;
+      /*height: 100px;*/
+      /*
+       테두리 모든 방향(상/우/하/좌)
+       두께: 1px
+       모양: 직선(solid) | 파선(dashed)
+       색상: #9db3bc
+       */
+      /*margin: 10px;*/
+      /*border: 10px dashed #9db3bc;*/
+      /*padding: 10px;*/
+      /* 배경 색상이 설정되는 위치 변경: IE 9+ */
+      /*background-clip: content-box;*/
+
+    }
+    .first {
+      background: #667e87;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 10px solid #333;
+      background-clip: content-box;
+      border-radius: 50%;
+    }
+    .second {
+      margin-top: 20px;
+      border-top: 10px solid #7045cf;
+      padding: 10px;
+      background: #4ba7ca;
+    }
+    .third {background: #96b3be;}
+    .fourth {background: #ecff2e;}
+    .fifth {background: #132832;}
+
+    .block {
+      /*display: block;*/
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    /*HTML의 모든 요소는 사각형 박스로 구성된다.
+    박스는 콘텐츠 박스와 패딩, 보더, 마진박스로 구성.
+
+    HTML의 모든 요소는 블록, 인라인 요소 크게 나뉜다.
+    블록의 특징은 가로 폭(width), 세로 폭(height)
+    설정이 가능하다. 인라인의 경우는 불가능하다.
+
+    별도의 설정이 없는 경우, 가로 폭은 자신을 포함하는
+    부모 요소의 가로 폭만큼 자동으로 늘어난다.
+    반면 세로 폭의 경우는 자신이 포함하는 자식 콘텐츠
+    만큼 늘어난다.*/
+
+    /* 인라인 요소의 경우는 가로/세로 모두
+    자식 콘텐츠의 양에 따라 박스 크기가 결정된다. */
+
+  </style>
+</head>
+<body>
+
+  <div class="box first"></div>
+  <div class="box second"></div>
+  <!-- <div class="box third"></div>
+  <div class="box fourth"></div>
+  <div class="box fifth"></div> -->
+
+  <hr>
+
+  <span class="box">inline element 1</span>
+  <span class="box">inline element 2</span>
+
+  <p>야무 한글 <strong class="block">로렘입숨</strong> 로렘입숨이란? 디자인을 위한 더미 텍스트!. 숨소리가 젊음의 청춘아!, 아름다운 하루를 아름답다 티셔츠 엮어가는, 찬란한 눈부신 운동화도. 어디에나 보기만 하루를 세상을 설레게 해도! 꽃보다 내일의 빛나는 꽃처럼 젊음의 숨 죽여도, 너 쿵쿵대는! 보기만!</p>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>가상 요소는 content를 사용해야 한다.</title>
+  <style>
+    .demo::before {
+      display: block;
+      font-size: 22px;
+      color: #5c00ee;
+      content: 'this is ::before pseudo element.';
+    }
+
+    .demo::after {
+      display: block;
+      font-size: 32px;
+      color: #fe4940;
+      content: '';
+    }
+
+    .float-demo::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    .fl {
+      float: left;
+      width: 100px;
+      height: 30px;
+      text-align: center;
+      background: #333;
+      color: #fff;
+    }
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="float-demo">
+    <div class="fl">content</div>
+    <div class="fl">content</div>
+    <div class="fl">content</div>
+    <div class="fl">content</div>
+    <!-- <div class="clear"></div> -->
+  </div>
+
+  <div class="demo">
+    <!-- ::before -->
+    this is real content.
+    <!-- ::after -->
+  </div>
+
+</body>
+</html>

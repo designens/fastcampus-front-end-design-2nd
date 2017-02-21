@@ -1,0 +1,78 @@
+body {
+  /*font-family: Helvetica, Arial, sans-serif;*/
+  /*font-weight: 400;*/
+  /*font-style: normal;*/
+  /*font-size: 1rem;*/
+  /*line-height: 1.5625rem;*/
+  /* font 속기형 작성법 */
+  /* font: 글자크기 글자모양; 필수!!!!! */
+  /*font: 글자크기/{행간크기} 글자모양; {} 선택! */
+  /*font: {글자기울기} {글자두께} 글자크기/{행간크기} 글자모양; {} 선택! */
+  font: 1rem/1.5625rem Helvetica, Arial, sans-serif;
+}
+h1 {
+  font: 600 4.25rem/4.6875rem inherit;
+  /*font-family: inherit;*/
+  /*font-weight: 600;*/
+  /*font-style: inherit;*/
+  /*font-size: 4.25rem;*/
+  /*line-height: 4.6875rem;*/
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+h2 {
+  font: 600 2.625rem/3.125rem inherit;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.5625rem;
+}
+h3 {
+  font: 600 1.625rem/3.125rem inherit;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem;
+}
+h4 {
+  font: 600 1rem/1.5625rem inherit;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem;
+}
+h5 {
+  font: 1rem/1.5625rem inherit;
+  margin-top: 1.5625rem;
+  margin-bottom: 0rem;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5625rem;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+a {
+  color: #268ED9;
+}
+.gridlover-grid {
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .3) 1px, transparent 1px);
+  background-position: left -1px;
+  background-repeat: repeat;
+  background-size: 1.5625rem 1.5625rem;
+}
+.gridlover-grid body {
+  box-shadow: 1px 0px 0px hsla(200, 100%, 50%, .3), -1px 0px 0px hsla(200, 100%, 50%, .3);
+}

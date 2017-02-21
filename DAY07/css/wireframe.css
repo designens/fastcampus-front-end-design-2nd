@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*! wireframe.css © yamoo9.net, 2016 */
+
+body {
+  margin: 0;
+}
+
+.header {
+  /* 디자인 화면 폭 설정 */
+  width: 960px;
+  /* 화면 가운데 배치 */
+  margin-left: auto;
+  margin-right: auto;
+  /* 화면 높이에 맞게 높이 값 설정 */
+  height: 100vh;
+  /* 화면을 식별하기 위한 배경 색상 설정 */
+  /*background: #ff0;*/
+}
+
+.logo {
+  padding-top: 32px;
+}
+
+.logo-symbol {
+  float: left;
+  margin-left: 10px;
+  width: 163px;
+  height: 54px;
+  background: #ffd800;
+}
+
+.log-text {
+  float: left;
+  width: 110px;
+  height: 54px;
+  margin-left: 10px;
+  background: #e3e5e7;
+}
+
+/**
+ * --------------------------------
+ * .categories
+ * ----------------------------- */
+.categories {
+  float: right;
+  margin-right: 10px;
+}
+
+.category {
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin-left: 10px;
+  background: #ffd800;
+  border-radius: 50%;
+}
+
+.contact-moving {
+  position: relative;
+}
+
+.contact-moving::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -1px;
+  height: 100px;
+  width: 0;
+  border: 1px solid #ffd800;
+}

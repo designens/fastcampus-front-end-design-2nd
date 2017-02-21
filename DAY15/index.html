@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>RWD Layout</title>
+  <link rel="stylesheet" href="../Resources/normalize.css">
+  <link rel="stylesheet" href="../Resources/rwd-grid.css">
+  <style>
+    /* flexible box : IE 10+ */
+    /* flexible box 예제 : http://codepen.io/osublake/pen/dMLQJr/  */
+    .align-hv-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      height: 30vh;
+      background: #d5d5d5;
+      color: #212121;
+    }
+    .box .box {
+      background: #333;
+      color: #eee;
+    }
+    .box:nth-child(2n) {
+      background:#575757;
+      color: #fff;
+    }
+    .box:nth-child(3n) {
+      background:#fe4940;
+      color: #fff;
+    }
+    .box:nth-child(4n) {
+      background:#34c0ff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid grid-adapt">
+    <div class="align-hv-center box m-1 t-1-2">
+      Mobile first
+    </div>
+    <div class="box m-1 t-1-2">
+      <!-- Desktop first -->
+      <div class="grid">
+        <div class="align-hv-center box m-1 t-1-2 d-1-2 w-1-4">box in box 1</div>
+        <div class="align-hv-center box m-1 t-1-2 d-1-2 d-hidden w-2-4">box in box 2</div>
+        <div class="align-hv-center box m-1 t-1-2 d-1-2 w-1-4">box in box 3</div>
+        <div class="align-hv-center box m-1 t-1-2 d-1 w-hidden">box in box 4</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

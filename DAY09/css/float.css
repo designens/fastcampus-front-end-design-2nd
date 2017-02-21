@@ -1,0 +1,50 @@
+body {
+  margin: 4rem;
+}
+
+.parent {
+  /*overflow: hidden;*/
+  /*float: left;*/
+  background: #e0e0e0;
+  /*border: 10px solid #bababa;*/
+  /*padding: 1rem;*/
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*.parent::before {
+  content: 'this is pseudo content.';
+}
+
+.parent::after {
+  content: 'this is pseudo ::after content in parent';
+}*/
+
+/* .child-1 ~ .child-4 공통 스타일 모듈 */
+[class*="child-"] {
+  float: left;
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.child-1 { /*float: left;*/ background: #de966e; }
+.child-2 { /*float: left;*/ background: #7a5ad7; }
+.child-3 { /*float: left;*/ background: #63bbce; }
+.child-4 { background: #9bda6a; }
+
+.clear {
+  clear: both;
+}
+
+.other-container {
+  padding: 1rem;
+  /*height: 50px;*/
+  background: #bebdac;
+}

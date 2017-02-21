@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>RWD: CSS 미디어쿼리</title>
+  <link rel="stylesheet" href="../Resources/normalize.css">
+  <link rel="stylesheet" href="../Resources/960gs-fluid.css">
+  <style>
+    /* CSS3 미디어쿼리 */
+    /* 모바일 >> 데스크탑 시장 */
+    /* 모바일 우선주의 (Mobile First) */
+    /* 중단점 설계(Design) 0 - 800 - 1024 - 1200 */
+    html {
+      font-size: 70%; /* 16px */
+    }
+    @media screen and (min-width: 800px) {
+      html {
+        font-size: 110%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      html {
+        font-size: 140%;
+      }
+    }
+    body {
+      /*background: #000;*/
+      /*color: #fff;*/
+      font: 1rem/1.5 "Spoqa Han Sans";
+    }
+  </style>
+</head>
+<body class="show-leading">
+  <div class="page container">
+    <div class="row">
+      <div class="col-6 prefix-1">
+        야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 설레게 엮어가는, 쿵쿵대는 숨소리가 숨 죽여도 다 들리는 청춘의 그대 땀 너야말로 소리 고동소리 찬란한, 설레는. 숨소리가 운동화도 소리 찬란한 쿵쿵대는 꽃처럼 그대 땀 고동소리 티셔츠 심장, 청춘아!.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

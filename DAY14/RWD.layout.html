@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>유동형 그리드 시스템</title>
+  <link rel="stylesheet" href="../Resources/normalize.css">
+  <link rel="stylesheet" href="../Resources/rwd-grid.css">
+  <style>
+    /* use style */
+    body {
+      font: 1rem/1.5 "Spoqa Han Sans", "Nanum Gothic";
+      letter-spacing: -0.02em;
+      word-spacing: 0.015em;
+    }
+    .wrapper {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    .box {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      height: 68px;
+      line-height: 68px;
+    }
+    .box:nth-child(2n) {
+      background: #f33;
+    }
+    .grid {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="grid">
+      <div class="box col-1">1</div>
+    </div>
+
+    <div class="grid">
+      <div class="col-1">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 하고 아름답다 쉬지 청춘의 씩씩하게 해도 햇볕처럼 너 꽃보다 엮어가는 세상을. 청춘 고동소리 해도 실수조차도, 꽃처럼 만들 젊음의 눈부신 아름답다 소리 빛나는 심장 찬란한 않고 꽃보다 숨 죽여도 흐르는 쿵쿵대는 청춘아! 어디에나 엮어가는, 사명으로 너야말로 운동화도 다 들리는 장엄한 설레는 그대! 하루를 아름답다 하고, 사명으로 청춘 숨소리가 소리!</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-2">1/2</div>
+      <div class="box col-1-2">1/2</div>
+    </div>
+
+    <div class="grid">
+      <div class="col-1-2 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 하고 아름답다 쉬지 청춘의 씩씩하게 해도 햇볕처럼 너 꽃보다 엮어가는 세상을. 청춘 고동소리 해도 실수조차도, 꽃처럼 만들 젊음의 눈부신 아름답다 소리 빛나는 심장 찬란한 않고 꽃보다 숨 죽여도 흐르는 쿵쿵대는 청춘아! 어디에나 엮어가는, 사명으로 너야말로 운동화도 다 들리는 장엄한 설레는 그대! 하루를 아름답다 하고, 사명으로 청춘 숨소리가 소리!</div>
+      <div class="col-1-2 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-3">1/3</div>
+      <div class="box col-1-3">1/3</div>
+      <div class="box col-1-3">1/3</div>
+    </div>
+
+    <div class="grid">
+      <div class="col-1-3 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 하고 아름답다 쉬지 청춘의 씩씩하게 해도 햇볕처럼 너 꽃보다 엮어가는 세상을. 청춘 고동소리 해도 실수조차도, 꽃처럼 만들 젊음의 눈부신 아름답다 소리 빛나는 심장 찬란한 않고 꽃보다 숨 죽여도 흐르는 쿵쿵대는 청춘아! 어디에나 엮어가는, 사명으로 너야말로 운동화도 다 들리는 장엄한 설레는 그대! 하루를 아름답다 하고, 사명으로 청춘 숨소리가 소리!</div>
+      <div class="col-1-3 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+      <div class="col-1-3 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-4">1/4</div>
+      <div class="box col-1-4">1/4</div>
+      <div class="box col-1-4">1/4</div>
+      <div class="box col-1-4">1/4</div>
+    </div>
+
+    <div class="grid">
+      <div class="col-1-4 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 하고 아름답다 쉬지 청춘의 씩씩하게 해도 햇볕처럼 너 꽃보다 엮어가는 세상을. 청춘 고동소리 해도 실수조차도, 꽃처럼 만들 젊음의 눈부신 아름답다 소리 빛나는 심장 찬란한 않고 꽃보다 숨 죽여도 흐르는 쿵쿵대는 청춘아! 어디에나 엮어가는, 사명으로 너야말로 운동화도 다 들리는 장엄한 설레는 그대! 하루를 아름답다 하고, 사명으로 청춘 숨소리가 소리!</div>
+      <div class="col-1-4 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+      <div class="col-1-4 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+      <div class="col-1-4 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-5">1/5</div>
+      <div class="box col-1-5">1/5</div>
+      <div class="box col-1-5">1/5</div>
+      <div class="box col-1-5">1/5</div>
+      <div class="box col-1-5">1/5</div>
+    </div>
+
+    <div class="grid">
+      <div class="col-1-5 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 하고 아름답다 쉬지 청춘의 씩씩하게 해도 햇볕처럼 너 꽃보다 엮어가는 세상을. 청춘 고동소리 해도 실수조차도, 꽃처럼 만들 젊음의 눈부신 아름답다 소리 빛나는 심장 찬란한 않고 꽃보다 숨 죽여도 흐르는 쿵쿵대는 청춘아! 어디에나 엮어가는, 사명으로 너야말로 운동화도 다 들리는 장엄한 설레는 그대! 하루를 아름답다 하고, 사명으로 청춘 숨소리가 소리!</div>
+      <div class="col-1-5 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+      <div class="col-1-5 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+      <div class="col-1-5 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+      <div class="col-1-5 gutter">야무 한글 로렘입숨 로렘입숨이란? 디자인을 위한 더미 텍스트!. 쿵쿵대는 다 들리는 아름다운 아름답다 씩씩하게 거추장스런 빛나는 꽃처럼 티셔츠 내일의, 설레는 심장 너야말로 하루를 숨소리가 너 피어나는 장엄한, 꽃보다. 꽃보다 거추장스런 청춘의 땀 만들 쉬지, 어디에나, 눈부신 하루를 다 들리는 가슴을 꽃처럼 소리 심장 빛나는 찬란한, 설레는 너 청춘 숨 죽여도 운동화도 사명으로 너야말로 아름답다 아름다운. 사명으로, 어디에나?</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-6">1/6</div>
+      <div class="box col-1-6">1/6</div>
+      <div class="box col-1-6">1/6</div>
+      <div class="box col-1-6">1/6</div>
+      <div class="box col-1-6">1/6</div>
+      <div class="box col-1-6">1/6</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-7">1/7</div>
+      <div class="box col-1-7">1/7</div>
+      <div class="box col-1-7">1/7</div>
+      <div class="box col-1-7">1/7</div>
+      <div class="box col-1-7">1/7</div>
+      <div class="box col-1-7">1/7</div>
+      <div class="box col-1-7">1/7</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-8">1/8</div>
+      <div class="box col-1-8">1/8</div>
+      <div class="box col-1-8">1/8</div>
+      <div class="box col-1-8">1/8</div>
+      <div class="box col-1-8">1/8</div>
+      <div class="box col-1-8">1/8</div>
+      <div class="box col-1-8">1/8</div>
+      <div class="box col-1-8">1/8</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-9">1/9</div>
+      <div class="box col-1-9">1/9</div>
+      <div class="box col-1-9">1/9</div>
+      <div class="box col-1-9">1/9</div>
+      <div class="box col-1-9">1/9</div>
+      <div class="box col-1-9">1/9</div>
+      <div class="box col-1-9">1/9</div>
+      <div class="box col-1-9">1/9</div>
+      <div class="box col-1-9">1/9</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+      <div class="box col-1-10">1/10</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+      <div class="box col-1-11">1/11</div>
+    </div>
+
+    <div class="grid">
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+      <div class="box col-1-12">1/12</div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="grid">
+      <div class="box col-1-7">1/7</div>
+      <div class="box col-3-7">3/7</div>
+      <div class="box col-3-7">3/7</div>
+    </div>
+    <div class="grid">
+      <div class="box col-5-8">5/8</div>
+      <div class="box col-2-8">2/8</div>
+      <div class="box col-1-8">1/8</div>
+    </div>
+    <div class="grid">
+      <div class="box col-2-6">2/6</div>
+      <div class="box col-2-6 offset-2-6">2/6, offset 2/6</div>
+    </div>
+    <div class="grid">
+      <div class="box col-4-10 offset-3-10">4/10, offset 3/10</div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "variables": {
+    "lang": "ko",
+    "locale": "ko-KR"
+  },
+
+  "snippets": {
+    "html": {
+      "snippets": {
+        // 조건부 주석문
+        "ce": "<!--// |${child} -->",
+        "cc:ie6": "<!--[if IE 6]>${child}|<![endif]-->",
+        "cc:ie7": "<!--[if IE 7]>${child}|<![endif]-->",
+        "cc:ie8": "<!--[if IE 8]>${child}|<![endif]-->",
+        "cc:ie9": "<!--[if IE 9]>${child}|<![endif]-->",
+        "cc:lt-ie7": "<!--[if lt IE 7]>${child}|<![endif]-->",
+        "cc:lt-ie8": "<!--[if lt IE 8]>${child}|<![endif]-->",
+        "cc:lt-ie9": "<!--[if lt IE 9]>${child}|<![endif]-->",
+        "cc:lte-ie7": "<!--[if lte IE 7]>${child}|<![endif]-->",
+        "cc:lte-ie8": "<!--[if lte IE 8]>${child}|<![endif]-->",
+        "cc:lte-ie9": "<!--[if lte IE 9]>${child}|<![endif]-->",
+        "cc:gt-ie6": "<!--[if gt IE 6]>${child}|<![endif]-->",
+        "cc:gt-ie7": "<!--[if gt IE 7]>${child}|<![endif]-->",
+        "cc:gt-ie8": "<!--[if gt IE 8]>${child}|<![endif]-->",
+        "cc:gte-ie6": "<!--[if gte IE 6]>${child}|<![endif]-->",
+        "cc:gte-ie7": "<!--[if gte IE 7]>${child}|<![endif]-->",
+        "cc:gte-ie8": "<!--[if gte IE 8]>${child}|<![endif]-->",
+        "script:ng": "<script src=\"http://ajax.googleapis.com/ajax/libs/angularjs/${1:1.4.8}/angular.min.js\"></script>"
+      },
+      "abbreviations": {
+        // 메타
+        "meta:mobile": "<meta name=\"viewport\" content=\"width=${1:device-width}, initial-scale=1.0, maximum-scale=1.0\" />",
+        "meta:compat": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=${1:Edge}\" />",
+        // 문서
+        "doc": "html>(head>meta:compat+meta[charset=UTF-8]+title{${1:문서 제목}})+body",
+        "project": "html>(head>meta:compat+meta[charset=UTF-8]+title+meta:mobile+link:c)+body",
+        "!": "!!!+doc[lang=ko-KR]",
+        "!!": "!!!+project[lang=ko-KR]",
+        //
+        "style:4": "style[type=text/css]",
+        "script:4": "script[type=text/javascript]",
+        "iframe": "<iframe src=\"\">",
+        "table+": "table[border=1 id=|]>caption+tr",
+        // 단축 코드
+        "meta:m": "meta:mobile",
+        "meta:c": "meta:compat",
+        "link:f": "link:favicon",
+        "link:t": "link:touch",
+        "link:c": "link[href=\"css/${1:style}.css\"]"
+      }
+    },
+    "css": {
+      "snippets": {
+
+      },
+      "abbreviations": {
+      }
+    }
+    }
+}

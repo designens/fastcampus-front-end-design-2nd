@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>웹 타이포그래피 (본문, 제목 디자인)</title>
+  <!-- 익스터널 스타일: 외부에 분리된 스타일 문서를 말합니다. -->
+  <!-- 관계: relation -->
+  <link rel="stylesheet" href="./page-style.css">
+
+
+  <!-- 인터널 스타일 <head> 내부에 직접 스타일 코드를 작성하는 방법 -->
+  <style>
+    /* 여기서부터는 CSS 스타일 코드이다. */
+    /* 선택자: 스타일링하고자 하는 문서의 요소(E)를 선택한다.*/
+    p {
+      /*
+      스타일 선언문
+      속성: 값;
+      */
+      /* 글자 크기 설정 */
+      font-size: 14px;
+      /* 글자 색상 설정 */
+      color: #1e5f5a;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dolorum!</p>
+
+  <!-- 인라인 스타일 방식 (절대 쓰지 말것!) -->
+  <p style="font-size: 14px; color: #1df;">한글은 조합어이기 때문에 철자로 구성된 영문보다 더 커보인다. 고로 영문과 동일한 글자 크기(Font Size)를 가졌을 때 영문은 한글보다 작아보이는 것이다.</p>
+
+  <!-- <p>한글은 조합어이기 때문에 철자로 구성된 영문보다 더 커보인다. 고로 영문과 동일한 글자 크기(Font Size)를 가졌을 때 영문은 한글보다 작아보이는 것이다.</p> -->
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/**
+ * 화면 가운데 <div class="container"> 요소를 배치(Layout)하고자 한다.
+ */
+.container {
+  /* 가로 폭 설정 */
+  width: 960px;
+  /* 세로 폭 설정 */
+  /* vh? viewport height */
+  height: 300vh;
+  /* 배경 색상 설정 */
+  background-color: #cdc6f0;
+  /* 화면 가운데 배치(Layout) */
+  /* 핵심! .container 요소에 width 폭을 설정했기 때문에
+  웹 브라우저의 전체 가로 폭에서 요소의 가로 폭을 뺀 나머지
+  공간을 좌/우 양쪽으로 양분하는 것이다. */
+  margin-left: auto;
+  margin-right: auto;
+}

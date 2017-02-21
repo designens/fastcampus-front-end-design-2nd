@@ -1,0 +1,83 @@
+@charset "utf-8";
+/*! float-layout-design.css © yamoo9.net, 2016 */
+
+/* WRAPPER */
+.wrapper {
+  width: 1200px;
+  height: 140vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/grid-system-pattern-10-80-10.png");
+  background-repeat: repeat;
+}
+
+/* HEADER */
+.page-header {
+  height: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: hsla(248, 99%, 71%, 0.5);
+}
+
+/* SECTION */
+.page-section {
+  margin-top: 24px;
+  height: 600px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: hsla(45, 99%, 71%, 0.5);
+}
+
+/* MAIN */
+.page-main {
+  float: right;
+  width: 780px;
+  background: hsla(202, 58%, 60%, 0.5);
+  height: inherit;
+}
+
+.testimonial {
+  list-style: none;
+}
+
+.testimonial-item {
+  float: left;
+  width: 360px;
+  margin-top: 24px;
+  margin-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: hsla(179, 85%, 52%, 0.5);
+}
+
+.testimonial-photo {
+  float: left;
+  margin: 0 20px;
+  border-radius: 50%;
+}
+
+.testimonial-item p {
+  overflow: hidden;
+  margin-right: 20px;
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: -0.02em;
+}
+
+/* SIDEBAR */
+.page-sidebar {
+  float: left;
+  width: 380px;
+  background: hsla(342, 58%, 60%, 0.5);
+  height: inherit;
+}
+
+/* FOOTER */
+.page-footer {
+  height: 96px;
+  margin-top: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: hsla(240, 0%, 46%, 0.5);
+}

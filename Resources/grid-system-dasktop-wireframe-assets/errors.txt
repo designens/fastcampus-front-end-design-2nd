@@ -1,0 +1,4 @@
+[8/2/2016, 8:50:22 PM] layer "content-03/fa-photo.svg, content-03/fa-photo.png, 200% content-03/fa-photo@2x.png": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.
+[8/2/2016, 8:50:23 PM] layer "container/fa-play-circle.svg, container/fa-play-circle.png, 200% container/fa-play-circle@2x.png": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.
+[8/2/2016, 8:50:58 PM] layer "content-06/fa-send.svg": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.
+[8/2/2016, 8:56:53 PM] layer "header/logo.png, 200% header/logo@2x.png, header/logo.svg": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.

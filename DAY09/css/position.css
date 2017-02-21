@@ -1,0 +1,50 @@
+body {
+  margin: 4rem;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: #000;
+  transition: width .4s ease-out;
+  /*transition: width .4s cubic-bezier(0.57, 0.04, 0, 1.15);*/
+}
+
+.container:hover {
+  width: 1200px;
+}
+
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.red {
+  /*
+  상대위치 지정이란?
+  자신의 원래 위치에 상대적으로 이동한다.
+  이동의 기준 축은 사용된 속성에 따라 결정된다.
+  top, left 설정할 경우 좌측 상단점이 기준이다.
+  */
+  top: 20px;
+  left: 20px;
+  background: #fd5c64 url("https://randomuser.me/api/portraits/women/21.jpg") -16px -16px;
+}
+.blue {
+  top: 20px;
+  right: 20px;
+  background: #4958fd url("https://randomuser.me/api/portraits/men/9.jpg") -7px -5px;
+}
+.yellow {
+  left: 20px;
+  bottom: 20px;
+  background: #ffd941 url("https://randomuser.me/api/portraits/men/41.jpg") -16px -16px;
+}
+.pink {
+  right: 20px;
+  bottom: 20px;
+  background: #fd679e url("https://randomuser.me/api/portraits/men/17.jpg") -16px -16px;
+}
